@@ -1,3 +1,4 @@
+node {
  stage ('Build') {
  
     git url: 'https://github.com/jamzcky/DevOpsCaseStudy_G3/tree/master/CalculatorDivision'
