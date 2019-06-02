@@ -1,7 +1,7 @@
 node {
  stage ('Build') {
  
-    git url: 'https://github.com/jamzcky/DevOpsCaseStudy_G3/tree/master/CalculatorDivision'
+    git url: 'https://github.com/jamzcky/DevOpsCaseStudy_G3.git'
  
     withMaven(
         // Maven installation declared in the Jenkins "Global Tool Configuration"
