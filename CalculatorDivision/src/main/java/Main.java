@@ -135,18 +135,18 @@ public class Main extends javax.swing.JFrame {
 /*     ******* add this for hot fix branch dev 3 ********  
        this will catch exceptions for division by zero
 */              
-//            if(exMsg == "Infinity")  
-//            {
-//                exMsg = "Division by Zero not allowed.";
-//            }
+            if(exMsg == "Infinity")  
+            {
+                exMsg = "Division by Zero not allowed.";
+            }
         }
 /*     ******* add this for feature development dev 1 ********  
        this will catch exceptions such as input string mismatch 
 */  
-//        }
-//        catch (NumberFormatException e){
-//            jLabelAnswer.setText("Input Error Occured: " + e.getMessage());
-//        }
+        }
+        catch (NumberFormatException e){
+            jLabelAnswer.setText("Input Error Occured: " + e.getMessage());
+        }
         catch (Exception e) {
             exMsg = e.getMessage();
         }
