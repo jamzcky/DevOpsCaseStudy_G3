@@ -105,16 +105,15 @@ public class Main extends javax.swing.JFrame {
 /*     ******* add this for feature development dev 1 ********  
        this will catch exceptions such as input string mismatch 
 */       
-        try
-        {
-            
-        
+//        try
+//        {                    
         jLabelAnswer.setText("Answer : " + Divide(txtboxDivisor.getText().trim(), txtboxDividend.getText().trim()));
-        
-        }
-        catch (Exception e){
-            jLabelAnswer.setText("Error: " + e.getMessage());
-        }
+ //       }
+    
+//        catch (Exception e){
+//            jLabelAnswer.setText("Error: " + e.getMessage());
+//        }
+
 
         
     }                                                
@@ -142,8 +141,7 @@ public class Main extends javax.swing.JFrame {
 //            }        
 /*     ******* add this for feature development dev 1 ********  
        this will catch exceptions such as input string mismatch 
-*/  
-        }
+*/          
         catch (NumberFormatException e){
            exMsg = "Error: " + e.getMessage();
            jLabelAnswer.setText(exMsg);
