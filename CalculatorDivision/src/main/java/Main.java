@@ -124,7 +124,7 @@ public class Main extends javax.swing.JFrame {
         {
             double answer;   
             answer = Double.parseDouble(divisor) / Double.parseDouble(dividend);   
-        }
+        
 /*     ******* add this for feature development dev 2 ********  
        this will format the answer by displaying only 2 decimal places
 */  
@@ -141,7 +141,8 @@ public class Main extends javax.swing.JFrame {
 //            }        
 /*     ******* add this for feature development dev 1 ********  
        this will catch exceptions such as input string mismatch 
-*/          
+*/       
+            }
         catch (NumberFormatException e){
            exMsg = "Error: " + e.getMessage();
            jLabelAnswer.setText(exMsg);
