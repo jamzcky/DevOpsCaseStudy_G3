@@ -124,7 +124,7 @@ public class Main extends javax.swing.JFrame {
         {
             double answer;   
             answer = Double.parseDouble(divisor) / Double.parseDouble(dividend);   
-            
+        }
 /*     ******* add this for feature development dev 2 ********  
        this will format the answer by displaying only 2 decimal places
 */  
