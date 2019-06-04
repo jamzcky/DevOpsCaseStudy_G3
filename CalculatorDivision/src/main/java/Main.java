@@ -100,23 +100,24 @@ public class Main extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButtonCalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCalculateActionPerformed
+      private void jButtonCalculateActionPerformed(java.awt.event.ActionEvent evt) {                                                 
         
 /*     ******* add this for feature development dev 1 ********  
        this will catch exceptions such as input string mismatch 
 */       
-//        try
-//        {
-//            
+        try
+        {
+            
         
         jLabelAnswer.setText("Answer : " + Divide(txtboxDivisor.getText().trim(), txtboxDividend.getText().trim()));
-    
-//        catch (Exception e){
-//          exMsg = jLabelAnswer.setText("Error: " + e.getMessage());
-//        }
+        
+        }
+        catch (Exception e){
+            jLabelAnswer.setText("Error: " + e.getMessage());
+        }
 
         
-    }//GEN-LAST:event_jButtonCalculateActionPerformed
+    }                                                
 
     public String Divide(String divisor, String dividend) {
              
@@ -129,22 +130,23 @@ public class Main extends javax.swing.JFrame {
        this will format the answer by displaying only 2 decimal places
 */  
 
-//          exMsg = (decFormat.format(answer));
+          //exMsg = (decFormat.format(answer));
             exMsg = Double.toString(answer);
             
 /*     ******* add this for hot fix branch dev 3 ********  
        this will catch exceptions for division by zero
 */              
-            if(exMsg == "Infinity")  
-            {
-                exMsg = "Division by Zero not allowed.";
-            }
-        }
+//            if(exMsg == "Infinity")  
+//            {
+//                exMsg = "Division by Zero not allowed.";
+//            }        
 /*     ******* add this for feature development dev 1 ********  
        this will catch exceptions such as input string mismatch 
-*/          
+*/  
+        }
         catch (NumberFormatException e){
-           exMsg = jLabelAnswer.setText("Error: " + e.getMessage());
+           exMsg = "Error: " + e.getMessage();
+           jLabelAnswer.setText(exMsg);
         }
         catch (Exception e) {
             exMsg = "Error: " + e.getMessage();
@@ -152,6 +154,7 @@ public class Main extends javax.swing.JFrame {
         
         return String.valueOf(exMsg);
     }
+    
     /**
      * @param args the command line arguments
      */
