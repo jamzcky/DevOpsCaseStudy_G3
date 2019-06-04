@@ -110,7 +110,7 @@ public class Main extends javax.swing.JFrame {
 //            
         
         jLabelAnswer.setText("Answer : " + Divide(txtboxDivisor.getText().trim(), txtboxDividend.getText().trim()));
-    }
+    
 //        catch (Exception e){
 //            jLabelAnswer.setText("Error: " + e.getMessage());
 //        }
