@@ -112,7 +112,7 @@ public class Main extends javax.swing.JFrame {
         jLabelAnswer.setText("Answer : " + Divide(txtboxDivisor.getText().trim(), txtboxDividend.getText().trim()));
     
 //        catch (Exception e){
-//            jLabelAnswer.setText("Error: " + e.getMessage());
+//          exMsg = jLabelAnswer.setText("Error: " + e.getMessage());
 //        }
 
         
@@ -144,10 +144,10 @@ public class Main extends javax.swing.JFrame {
        this will catch exceptions such as input string mismatch 
 */          
         catch (NumberFormatException e){
-            jLabelAnswer.setText("Input Error Occured: " + e.getMessage());
+           exMsg = jLabelAnswer.setText("Error: " + e.getMessage());
         }
         catch (Exception e) {
-            exMsg = e.getMessage();
+            exMsg = "Error: " + e.getMessage();
         }
         
         return String.valueOf(exMsg);
