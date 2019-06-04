@@ -75,9 +75,9 @@ public class NewEmptyJUnitTest {
         System.out.println("Divide with String");
         String divisor = "9";
         String dividend = "a";        
-        String expResult = "For input string";
+        String expResult = "Error:";
         String result = instance.Divide(divisor, dividend);
-        assertEquals(expResult, result.substring(0, 16));
+        assertEquals(expResult, result.substring(0, 6));
        
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
