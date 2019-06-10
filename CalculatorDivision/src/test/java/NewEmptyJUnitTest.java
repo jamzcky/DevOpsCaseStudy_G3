@@ -79,8 +79,7 @@ public class NewEmptyJUnitTest {
         String result = instance.Divide(divisor, dividend);
         assertEquals(expResult, result.substring(0, 6));
        
-        // TODO review the generated test code and remove the default call to fail.
-        //fail("The test case is a prototype.");
+
     }
 
 }
